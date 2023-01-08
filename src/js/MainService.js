@@ -11,6 +11,13 @@ export class MainService {
         this.btnAdd = document.getElementById('addBtn');
         this.btnAdd.addEventListener('click', (e) => this._onOpenModal(e));
 
+        this.btnTogTheme = document.getElementById('togThemeBtn');
+        this.btnTogTheme.addEventListener('click', (e) => this._toggleTheme(e));
+
+        if (localStorage.getItem('dark-theme') === 'true') 
+        {
+            document.body.classList.toggle("dark-theme");
+        }
     }
 
     fetchAllTodo() {
@@ -22,5 +29,18 @@ export class MainService {
 
     _onOpenModal() {
         this.modalService.open();
+    }
+
+    _toggleTheme() {
+        if (localStorage.getItem('dark-theme') === 'true') 
+        {
+            localStorage.setItem('dark-theme', 'false');
+        }
+        else
+        {
+            localStorage.setItem('dark-theme', 'true');
+        }
+        
+        document.body.classList.toggle("dark-theme");
     }
 }

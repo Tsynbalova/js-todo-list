@@ -16,6 +16,38 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+body.dark-theme {
+    color: #eee;
+    background: #121212;
+    border-color: #eee;
+}
+
+body.dark-theme div {
+    color: #eee;
+    background: #121212;
+    border-color: #eee;
+}
+
+body.dark-theme button {
+    border-color: #eee;
+    background-color: #eee;
+}
+
+body.dark-theme button:hover {
+    border-color: #eee;
+    background-color: #121212;
+    color: #eee;
+    transform: translate(0px, 2px);
+}
+
+body.dark-theme .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .modal, body.dark-theme .modalUpd {
+    border: 1px solid #eee;
+}
+
 div {
     box-sizing: border-box;
 }
