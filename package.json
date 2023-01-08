@@ -8,8 +8,7 @@
         "build": "vite build",
         "preview": "vite preview",
         "prettier": "prettier -w .",
-        "prettier:check": "prettier -c .",
-        "dev:server": "node ./server/server.js"
+        "prettier:check": "prettier -c ."
     },
     "dependencies": {
         "normalize.css": "^8.0.1"

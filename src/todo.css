@@ -2,7 +2,9 @@
     display: flex;
     flex-flow: column nowrap;
 
-    border: 1px solid black;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
 }
 
 .card__header {
@@ -11,13 +13,19 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 8px 0;
-    margin-bottom: 12px;
+    background-color: #f7b1f1;
+    border-radius: 10px 10px 0 0;
+    /* padding: 8px 0;
+    margin-bottom: 12px; */
 }
 
-.card__description {
+.card__body {
     padding: 16px;
     font-size: 20px;
+    border-top: 2px solid black;
+
+    background-color: #fad5f7;
+    border-radius: 0 0 10px 10px;
 }
 
 .card__title {
@@ -30,7 +38,18 @@
     padding: 0 16px;
 }
 
+.card__userId {
+    padding: 0 16px;
+}
+
 .card__remove {
     padding: 0 16px;
     margin-right: 16px;
+}
+
+.card__boxButton {
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid black;
 }
